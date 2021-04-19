@@ -1,13 +1,15 @@
 package com.example
 
-import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSExportTopLevel, JSImport}
-import scala.scalajs.LinkingInfo
+import com.example.reactrouter.BrowserRouter
+import com.example.reactrouter.withRouter
 
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSExportTopLevel
+import scala.scalajs.js.annotation.JSImport
+import scala.scalajs.LinkingInfo
 import slinky.core._
 import slinky.web.ReactDOM
 import slinky.hot
-
 import org.scalajs.dom
 
 @JSImport("resources/index.css", JSImport.Default)
@@ -30,6 +32,6 @@ object Main {
       elem
     }
 
-    ReactDOM.render(App(), container)
+    ReactDOM.render(BrowserRouter(withRouter(AppRoutes)), container)
   }
 }

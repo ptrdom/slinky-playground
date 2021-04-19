@@ -27,7 +27,9 @@ object ReactLogo extends js.Object
         h1(className := "App-title")("Welcome to React (with Scala.js!)")
       ),
       p(className := "App-intro")(
-        "To get started, edit ", code("App.scala"), " and save to reload."
+        "To get started, edit ",
+        code("App.scala"),
+        " and save to reload."
       )
     )
   }

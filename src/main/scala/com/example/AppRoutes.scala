@@ -1,6 +1,8 @@
 package com.example
 
 import com.example.Routes._
+import com.example.reactdnd.DndProvider
+import com.example.reactdnd.ReactDndHtml5Dom.HTML5Backend
 import com.example.reactrouter.Link
 import com.example.reactrouter.Route
 import com.example.reactrouter.RouteProps
@@ -33,7 +35,7 @@ import slinky.web.html.ul
       ),
       hr(),
       Route.withComponent(exact = true, path = app, component = App),
-      Route.withComponent(exact = true, path = app, component = DragAndDrop.component)
+      Route.withRender(exact = true, path = dragAndDrop, render = _ => DndProvider(HTML5Backend)(DragAndDrop()))
     )
   }
 }

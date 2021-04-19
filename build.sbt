@@ -4,10 +4,12 @@ name := "slinky-playground"
 
 scalaVersion := "2.13.2"
 
-npmDependencies in Compile += "react"            -> "16.13.1"
-npmDependencies in Compile += "react-dom"        -> "16.13.1"
-npmDependencies in Compile += "react-proxy"      -> "1.1.8"
-npmDependencies in Compile += "react-router-dom" -> "5.2.0"
+npmDependencies in Compile += "react"                   -> "16.14.0"
+npmDependencies in Compile += "react-dom"               -> "16.14.0"
+npmDependencies in Compile += "react-proxy"             -> "1.1.8"
+npmDependencies in Compile += "react-router-dom"        -> "5.2.0"
+npmDependencies in Compile += "react-dnd"               -> "14.0.2"
+npmDependencies in Compile += "react-dnd-html5-backend" -> "14.0.0"
 
 npmDevDependencies in Compile += "file-loader"         -> "6.0.0"
 npmDevDependencies in Compile += "style-loader"        -> "1.2.1"
